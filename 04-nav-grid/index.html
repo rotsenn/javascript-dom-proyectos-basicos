@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/b0c5721fbb.js" crossorigin="anonymous"></script>
+  <script src="./app.js" defer></script>
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    h2 {
+      margin: 10px;
+      text-transform: capitalize;
+    }
+
+    a {
+      text-transform: capitalize;
+      list-style: none;
+      text-decoration: none;
+    }
+
+    .grid-container > * {
+      font-size: 1.2rem;
+    }
+
+    .header {
+      grid-area: header;
+      background-color: aquamarine;
+      position: relative;
+      border-radius: 0 0 10px 0px;
+    }
+
+    .nav-toggle {
+      position: absolute;
+      top: 25%;
+      left: 90%;
+    }
+
+    .navbar {
+      border-radius: 0 0 10px 0;
+    }
+
+    @media (min-width: 576px) {
+      .grid-container {
+        display: grid;
+        grid-template:
+          "header" 60px
+          "navbar" 210px;
+      }
+
+      ul li{
+        display: inline-block;
+        position: relative;
+        top: -45px;
+        left: 35vw;
+        
+      }
+
+      li {
+        margin-right: 5vw;
+        
+      }
+
+      .navbar {
+        grid-area: navbar;
+        /* background-color: bisque; */
+      }
+
+      .nav-toggle {
+        display: none;
+      }
+
+    }
+
+    @media screen and (max-width: 575px) {
+
+      .grid-container {
+        display: grid;
+        /* gap: 10px; */
+        grid-template:
+          "header" 60px
+          "navbar" 210px;
+      }
+
+      ul {
+        margin-top: 20px;
+      }
+
+      li {
+        padding: 10px;
+      }
+
+      li:hover {
+        background-color: aquamarine;
+      }
+
+      .navbar {
+        grid-area: navbar;
+        background-color: bisque;
+        
+      }
+
+      .display {
+        display: none;
+      }
+
+      .nav-toggle {
+        background-color: transparent;
+        padding: 5px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      
+    }
+  </style>
+</head>
+
+<body class="grid-container">
+
+  <header class="header">
+    <h2>nav bar</h2>
+    <button class="nav-toggle">
+      <i class="fas fa-bars"></i>
+    </button>
+  </header>
+  <nav class="navbar">
+
+    <ul class="links">
+      <li><a href="">home</a></li>
+      <li><a href="">projects</a></li>
+      <li><a href="">about</a></li>
+      <li><a href="">contact</a></li>
+    </ul>
+
+  </nav>
+
+</body>
+
+</html>

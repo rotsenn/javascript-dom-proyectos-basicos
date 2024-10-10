@@ -1,0 +1,114 @@
+:root {
+    --azul: aqua;
+    --dark-blue: rgb(51, 216, 216);
+    --azul-claro: rgb(232, 245, 240);
+    --gray: #4d4c4c;
+}
+
+body {
+    margin: 0 auto;
+    background-color: var(--azul-claro);
+    /* font-family: ar; */
+}
+
+.container {
+    margin: 40px auto;
+    text-align: center;
+    width: 35rem;
+    padding: 1rem;
+}
+
+h2 {
+    text-transform: capitalize;
+    letter-spacing: 0.3rem;
+    color: var(--gray);
+}
+
+.underline {
+    margin: 0 auto;
+    background-color: var(--azul);
+    width: 8vw;
+    height: 0.25rem;
+}
+
+.reviews {
+    margin-top: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 10px 15px 15px rgb(136, 136, 136);
+    width: 35rem;
+}
+
+.img-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+    top: 15px;
+}
+
+#person-img {
+    width: 100%;
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 10px 10px 15px rgb(236, 235, 235);
+}
+
+#author {
+    margin: 0;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-size: 1.3rem;
+}
+
+#job {
+    margin: 0;
+    margin-top: 5px;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 0.1rem;
+    color: var(--dark-blue);
+}
+
+#info {
+    margin: 15px auto;
+    width: 30rem;
+    color: var(--gray);
+}
+
+.button-container>.prev-btn,
+.next-btn {
+    border: none;
+    background: #fff;
+    cursor: pointer;
+    font-size: 1.9rem;
+    color: var(--dark-blue);
+    margin-bottom: 10px;
+    font-weight: bold;
+
+}
+
+.random-btn {
+    background-color: var(--azul-claro);
+    border-radius: 5px;
+    border: 1px solid var(--dark-blue);
+    margin-bottom: 15px;
+    padding: 2px 5px;
+    color: var(--azul);
+    cursor: pointer;
+    
+}
+
+
+
+
+/* 
+    rem - letra, margin y padding
+    vw - width
+    vh - height
+*/

@@ -1,0 +1,36 @@
+html, body {
+    background-color: azure;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.8rem;
+}
+
+.contenedor {
+    text-align: center; 
+    margin-top: 150px;
+}
+
+h1 {
+    color: #00113f;
+    font-weight: unset;
+    letter-spacing: 0.3rem;
+    margin-bottom: 15px;
+}
+
+#number {
+    color: #00113f;
+    font-size: 3.5rem;
+}
+
+.btn {
+    border-radius: 5px;
+    border: 2px solid #00113f;
+    cursor: pointer;
+    letter-spacing: 0.1rem;
+    padding: 7px;
+    text-transform: uppercase;
+} 
+
+.btn:hover {
+    background-color: rgb(170, 209, 209);
+}
+
