@@ -1,0 +1,61 @@
+// get Elements
+const plusBtns = document.querySelectorAll('.plus-btn');
+const hidden = document.querySelectorAll('.hidden');
+const changeBtn = document.querySelector('.btn-1')
+const btnMinus = document.querySelector('fa-plus-square');
+
+
+plusBtns.forEach((plusBtn) => {
+    console.log(plusBtn);
+
+    plusBtn.addEventListener('click', (e) => {
+
+        const clickPlus = e.target.classList;
+        hidden.forEach((hid) => {
+
+            if ( clickPlus.contains('btn-1') ) {
+                hid.classList);               
+            }
+
+        });
+    });
+});
+
+
+
+-------------------------
+
+
+// get Elements
+const plusBtns = document.querySelectorAll('.plus-btn');
+const hidden = document.querySelectorAll('.hidden');
+const changeBtn = document.querySelector('.btn-1')
+const btnMinus = document.querySelector('fa-plus-square');
+
+
+plusBtns.forEach((plusBtn) => {
+    // console.log(plusBtn);
+
+    plusBtn.addEventListener('click', (e) => {
+        hidden.forEach((hid) => {
+
+            const click = e.target.classList;
+            if (click.contains('btn-1')) {
+                hid.classList.remove('hidden1');
+
+                if (changeBtn.classList.contains('fa-plus-square')) {
+                    // console.log(true);
+                    changeBtn.classList.remove('fa-plus-square');
+                    changeBtn.classList.add('fa-minus-square');
+                } 
+            }
+
+            // task: event when click in fa-minus-square
+            
+        });
+
+
+
+
+    });
+});

@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(228, 238, 235);
+}
+
+.questions-container {
+    position: relative;
+    top: 5.5vh;
+    width: clamp(100px, 98%, 650px);
+    height: 76vh;
+    margin: 0 auto;
+    background-color: rgb(228, 238, 235);
+}
+
+.div-title {
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(228, 238, 235);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-family: "Great Vibes", cursive;
+    font-size: 2.5rem;
+    text-rendering: optimizeSpeed;
+    font-weight: normal;
+    text-transform: capitalize;
+    letter-spacing: 5px;
+    color: rgb(218, 153, 69);
+}
+
+.div-questions {
+    margin-top: 1em;
+    padding: 7px;
+    width: 100%;
+    margin-bottom: 1.8em;
+    background-color: #fff;
+    box-shadow: -1px 1px 7px 0px rgba(160, 160, 160, 0.9);
+    font-family: "Open Sans";
+    border-radius: 5px;
+    /* display: flex;
+    justify-content: start;
+    align-items: center; */
+}
+
+.asks {
+    font-family: "Open Sans";
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    font-weight: 600;
+    display: inline-block;
+    word-wrap: break-word;
+}
+
+.asks,
+hr {
+    margin-bottom: 0.5em;
+}
+
+.btn-plus {
+    background-color: transparent;
+    position: absolute;
+    right: 0;
+    margin-right: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.show-button {
+    background-color: transparent;
+    position: absolute;
+    right: 0;
+    margin-right: 8px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.hide-btn-1,
+.hide-btn-2,
+.hide-btn-3 {
+    display: none;
+}
+
+.plus-icon i {
+    font-size: 1.2rem;
+    color: rgb(162, 135, 92);
+}
+
+.plus-icon i:hover {
+    font-size: 1.3rem;
+    color: rgb(169, 150, 92);
+}
+
+.hidden1,
+.hidden2,
+.hidden3 {
+    display: none;
+}
+
+.hidden1,
+.hidden2,
+.hidden3 {
+    font-size: 0.95rem;
+    line-height: 1.39;
+}
+
+
+.btn-minus {
+    background-color: transparent;
+    position: absolute;
+    right: 0;
+    margin-right: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.hide-btn-4,
+.hide-btn-5,
+.hide-btn-6 {
+    display: none;
+}

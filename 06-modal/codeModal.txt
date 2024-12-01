@@ -1,0 +1,129 @@
+/* Html*/
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Modal</title>
+</head>
+<body>
+
+    <menu class="container ">
+
+        <div class="container-modal">
+            <h2>modal project</h2>
+            <button id="btn-modal">open modal</button>
+        </div>
+    </menu>
+    <!-- <div class=" ">
+        <h2>modal content</h2>
+    </div> -->
+
+    <!-- clases a gregar y quitar
+     * opacity-modal 
+     * opacity-container -->
+</body>
+</html>
+
+/* Css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.opacity-container {
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(./night.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    image-rendering: crisp-edges;
+    opacity: 0.95;
+    z-index: -1;
+}
+
+.container-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    background-color: aliceblue;
+    width: clamp(100px, 95%, 500px);
+    height: 150px;
+    text-align: center;
+    border-radius: 7px;
+
+}
+
+/* .background-modal {
+    opacity: 0.7;
+    background-color: black;
+} */
+
+
+/* .opacity-modal {
+    z-index: 1;
+} */
+
+.opacity-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    background-color: #fff;
+    width: clamp(100px, 95%, 400px);
+    height: 250px;
+    text-align: center;
+    border-radius: 7px;
+    /* visibility: hidden; */
+    z-index: 10;
+    /* opacity: 0.5; */
+}
+
+
+h2 {
+    margin-top: 1em;
+    text-transform: capitalize;
+    font-size: 2.2rem;
+    letter-spacing: 4px;
+}
+
+#btn-modal {
+    margin-top: 1em;
+    padding: 0.8em 1.5em;
+    border-radius: 4px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #17f;
+    font-size: 0.8rem;
+}
+
+#btn-modal:hover {
+    background-color: #fff;
+    border: 1px solid #17f;
+    color: #17f;
+}
